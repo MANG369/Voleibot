@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>VoleiBot - Kit de Herramientas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>VoleiBot</h1>
+            <p class="subtitle">Tu kit de herramientas de Voleibol</p>
+        </header>
+
+        <main class="menu-grid">
+            <h2 class="category-title">En el Partido</h2>
+            <a href="./anotador/" class="menu-item">
+                <div class="menu-item-text"><h2>Anotador de Partidos</h2><p>Lleva el marcador en tiempo real</p></div>
+            </a>
+            <a href="./rotaciones/" class="menu-item">
+                <div class="menu-item-text"><h2>Rastreador de Rotación</h2><p>Gestiona posiciones y sustituciones</p></div>
+            </a>
+            <a href="./estadisticas/" class="menu-item">
+                <div class="menu-item-text"><h2>Estadísticas en Vivo</h2><p>Registra las acciones de tus jugadores</p></div>
+            </a>
+
+            <h2 class="category-title">Entrenamiento y Táctica</h2>
+            <a href="./pizarra/" class="menu-item">
+                <div class="menu-item-text"><h2>Pizarra Táctica</h2><p>Diseña y guarda tus jugadas</p></div>
+            </a>
+            <a href="./temporizador/" class="menu-item">
+                <div class="menu-item-text"><h2>Temporizador de Drills</h2><p>Crea rutinas de entrenamiento</p></div>
+            </a>
+            <a href="./ejercicios/" class="menu-item">
+                <div class="menu-item-text"><h2>Biblioteca de Ejercicios</h2><p>Consulta drills por categoría</p></div>
+            </a>
+
+            <h2 class="category-title">Recursos y Gestión</h2>
+            <a href="./plantilla/" class="menu-item">
+                <div class="menu-item-text"><h2>Gestor de Plantilla</h2><p>Administra tu equipo</p></div>
+            </a>
+            <a href="./reglas/" class="menu-item">
+                <div class="menu-item-text"><h2>Guía de Reglas</h2><p>Referencia rápida de reglas y señales</p></div>
+            </a>
+        </main>
+    </div>
+    <script>
+        // Inicializamos la app de Telegram en el menú principal
+        window.Telegram.WebApp.ready();
+    </script>
+</body>
+</html>

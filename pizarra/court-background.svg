@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1500px"
+	 height="2500px" viewBox="0 0 1500 2500" enable-background="new 0 0 1500 2500" xml:space="preserve">
+<g id="background">
+	<rect fill="#61995E" width="1500" height="2500"/>
+</g>
+<g id="ground">
+	<g>
+		<rect x="306" y="356" fill="#E19B4E" width="888" height="1788"/>
+		<path fill="#FFFFFF" d="M1188,362v1776H312V362H1188 M1200,350H300v1800h900V350L1200,350z"/>
+	</g>
+	<g>
+		<rect x="306" y="957" fill="#E19B4E" width="888" height="588"/>
+		<path fill="#FFFFFF" d="M1188,963v576H312V963H1188 M1200,951H300v600h900V951L1200,951z"/>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#FFFFFF" stroke-width="12" x1="300" y1="1250" x2="309" y2="1250"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="12" stroke-dasharray="18,18" x1="327" y1="1250" x2="1182" y2="1250"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="12" x1="1191" y1="1250" x2="1200" y2="1250"/>
+		</g>
+	</g>
+</g>
+</svg>

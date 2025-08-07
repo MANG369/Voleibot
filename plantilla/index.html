@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Plantilla - VoleiBot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Gestor de Plantilla</h1>
+    </header>
+
+    <main id="player-list-container"></main>
+
+    <button id="add-player-btn" class="fab">+</button>
+
+    <div id="player-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <h2 id="modal-title">Añadir Jugador</h2>
+            <form id="player-form">
+                <input type="hidden" id="player-id">
+                <input type="text" id="player-name" placeholder="Nombre Completo" required>
+                <input type="number" id="player-number" placeholder="#" required>
+                <select id="player-position" required>
+                    <option value="" disabled selected>Seleccionar Posición</option>
+                    <option value="Colocador">Colocador</option>
+                    <option value="Punta/Receptor">Punta/Receptor</option>
+                    <option value="Central">Central</option>
+                    <option value="Opuesto">Opuesto</option>
+                    <option value="Líbero">Líbero</option>
+                </select>
+                <div class="modal-actions">
+                    <button type="button" id="cancel-btn" class="btn secondary-btn">Cancelar</button>
+                    <button type="submit" class="btn">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

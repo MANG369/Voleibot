@@ -1,0 +1,33 @@
+:root { /* ...variables de tema... */ }
+body { font-family: 'Poppins', sans-serif; transition: background-color 0.5s ease; margin: 0; background-color: var(--tg-theme-bg-color, #f4f4f9); }
+.view { display: none; padding: 15px; }
+.view.active { display: block; }
+
+.header { text-align: center; margin-bottom: 20px; }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 5px; }
+.time-input { display: flex; gap: 10px; }
+input[type="number"], select {
+    width: 100%; padding: 12px; border: 1px solid var(--tg-hint);
+    border-radius: 8px; font-size: 1.1em; background-color: var(--tg-bg); color: var(--tg-text);
+}
+.btn { border: none; border-radius: 8px; font-weight: 600; width: 100%; padding: 15px; font-size: 1.2em; cursor: pointer; background-color: var(--tg-theme-button-color, #3390ec); color: var(--tg-theme-button-text-color, #fff); }
+.secondary-btn { background-color: var(--tg-hint); }
+.small-btn { padding: 12px; font-size: 1em; width: auto; }
+
+.presets-panel { margin-top: 30px; border-top: 1px solid var(--tg-hint); padding-top: 20px;}
+.preset-controls { display: flex; flex-wrap: wrap; gap: 10px; }
+.preset-controls select, .preset-controls input { flex-grow: 1; }
+
+#timer-view {
+    display: none; height: 100vh; flex-direction: column; 
+    justify-content: space-around; align-items: center; text-align: center; color: white; padding: 30px 15px; box-sizing: border-box;
+}
+#timer-view.active { display: flex; }
+body.state-work { background-color: #2E7D32; }
+body.state-rest { background-color: #1565C0; }
+
+.timer-display .status { font-size: 2.5em; font-weight: 700; text-transform: uppercase; }
+.timer-display .time { font-family: 'Roboto Mono', monospace; font-size: 7em; font-weight: 700; line-height: 1.2; }
+.timer-display .rounds { font-size: 1.5em; opacity: 0.8; }
+.timer-controls { width: 100%; display: flex; gap: 10px; }

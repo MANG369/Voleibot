@@ -1,0 +1,87 @@
+:root {
+    --tg-bg: var(--tg-theme-bg-color, #f4f4f9);
+    --tg-text: var(--tg-theme-text-color, #000000);
+    --tg-hint: var(--tg-theme-hint-color, #7d7d7d);
+    --card-bg: var(--tg-theme-secondary-bg-color, #ffffff);
+    --accent-color: #3390ec; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--tg-bg);
+    color: var(--tg-text);
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.header .subtitle {
+    font-size: 1.1em;
+    color: var(--tg-hint);
+}
+
+.menu-grid {
+    display: grid;
+    gap: 15px;
+}
+
+.category-title {
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--tg-hint);
+    margin-top: 20px;
+    margin-bottom: -5px;
+    padding-left: 5px;
+}
+
+.category-title:first-of-type {
+    margin-top: 0;
+}
+
+.menu-item {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-item:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.menu-item-text h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.menu-item-text p {
+    font-size: 0.9em;
+    color: var(--tg-hint);
+}

@@ -1,0 +1,28 @@
+:root {
+    --tg-bg: var(--tg-theme-bg-color, #f4f4f9);
+    --tg-text: var(--tg-theme-text-color, #000000);
+    --tg-hint: var(--tg-theme-hint-color, #7d7d7d);
+    --card-bg: var(--tg-theme-secondary-bg-color, #ffffff);
+    --accent-color: #3390ec; 
+}
+body { font-family: 'Poppins', sans-serif; background-color: var(--tg-bg); color: var(--tg-text); margin: 0;}
+.header { display: flex; align-items: center; justify-content: center; position: relative; padding: 15px; border-bottom: 1px solid var(--card-bg); }
+.back-btn { position: absolute; left: 15px; background: none; border: none; font-size: 1.5em; color: var(--tg-text); cursor: pointer; }
+#main-title { font-size: 1.2em; margin: 0; }
+#content-container { padding: 15px; }
+.category-list, .drill-list { list-style: none; padding: 0; margin: 0; }
+.list-item {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+.list-item:active { transform: scale(0.98); }
+.drill-detail h2 { font-size: 1.5em; margin-bottom: 10px; }
+.drill-detail h3 { font-size: 1.1em; margin-top: 20px; color: var(--accent-color); margin-bottom: 5px; }
+.drill-detail p { line-height: 1.6; margin: 0; }
